@@ -4,7 +4,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("maven-publish")
+    id("com.github.dcendents.android-maven")
 }
 
 android {
@@ -60,5 +60,3 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.13.2")
     implementation("androidx.cardview:cardview:1.0.0")
 }
-
-group = "com.github.suein1209"
