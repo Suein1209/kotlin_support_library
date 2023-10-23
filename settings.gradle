@@ -1,0 +1,3 @@
+include ":app"
+include ":m_common_utils"
+project(':m_common_utils').projectDir = new File('./m_common_utils')
