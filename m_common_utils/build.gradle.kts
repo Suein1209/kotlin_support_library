@@ -4,7 +4,7 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
-    id("com.github.dcendents.android-maven")
+    id("maven-publish")
 }
 
 android {
@@ -57,6 +57,20 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.1")
     implementation("androidx.viewpager2:viewpager2:1.1.0-beta02")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.github.bumptech.glide:glide:4.13.2")
+    implementation("com.github.bumptech.glide:glide:4.15.1")
     implementation("androidx.cardview:cardview:1.0.0")
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.jitpack"
+                artifactId = "android-example"
+                version = "1.0"
+            }
+        }
+    }
 }

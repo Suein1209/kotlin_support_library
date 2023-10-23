@@ -33,8 +33,6 @@ allprojects {
         mavenCentral()
         gradlePluginPortal()
     }
-
-    group = "com.github.suein1209"
 }
 
 tasks.register("clean", Delete::class) {
