@@ -12,6 +12,7 @@ buildscript {
         classpath("org.jetbrains.kotlin:kotlin-serialization:1.8.10")
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.46.1")
+        classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
         classpath(kotlin("gradle-plugin", version = "1.8.10"))
         classpath(kotlin("serialization", version = "1.8.10"))
     }
@@ -28,6 +29,7 @@ allprojects {
     repositories {
         google()
         maven("https://maven.google.com")
+        maven("https://jitpack.io")
         mavenCentral()
         gradlePluginPortal()
     }

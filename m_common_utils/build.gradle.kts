@@ -59,3 +59,5 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.13.2")
     implementation("androidx.cardview:cardview:1.0.0")
 }
+
+group = "com.github.suein1209"
